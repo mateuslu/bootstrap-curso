@@ -7,52 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<section class="container">
+	<nav class="navbar navbar-default">
+		<div class="container">
+
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+        	</button>
+        	<a href="#" class="navbar-brand">TopCasaFina Arquitetura</a>
+        	</div>
+			<div class="collapse navbar-collapse" id="collapse-navbar">
+				<ul class="nav navbar-nav">
+						<li><a href="#Sobre-nos">Sobre Nós</a>	</li>
+						<li><a href="#nossos-projetos">Nossos Projetos</a></li>
+					    <li><a href="#depoimentos">Depoimentos</a></li>
+					    <li><a href="#video">Video</a></li>
+					    <li><a href="#contato">Contato</a></li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<section id="Sobre-nos" class="container">
 		<h3 >Sobre Nós</h3>
 		<figcaption>
 			<figure>
 				<img class="img-responsive" src="img/empresa.jpg">
 			</figure>
 		</figcaption>
-		<div class="panel-group" id="paineis-sobre">
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo"
-						data-parent="#paineis-sobre">Desde 1935</h3>
-				</div>
-				<div id = "primeiro-paragrafo" class="collapse in">
-					<div class="panel-body">
-						<p >A TopCasaFina Arquitetura esta no mercado desde...</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo"
-						data-parent="#paineis-sobre" >Preços acessíveis</h3>
-				</div>
-				<div id = "segundo-paragrafo" class="collapse in">
-					<div class="panel-body" >
-						<p >A Top CasaFina Arquitetura esta no mercado desde...</p>
-					</div>
-				</div>
-			</div>
-
+		<div class="panel-group col-sm-6" id="paineis-sobre">
 				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo"
-							data-parent="#paineis-sobre">Um mundo mais bonito</h3>
+					<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+						<h3 class="panel-title">Desde 1935</h3>
 					</div>
-					<div id = "terceiro-paragrafo" class="collapse in">
+
+					<div class="collapse in" id="primeiro-paragrafo">
 						<div class="panel-body">
-							<p >A TopCasaFina Arquitetura esta no mercado desde...</p>
+							Desde 1935 trazendo casas, mansões e prédios lindos para o mundo
 						</div>
 					</div>
-				</div>	
+				</div>
 
+				<div class="panel panel-default">
+					<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
+						<h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
+					</div>
+
+					<div id="segundo-paragrafo" class="collapse">
+						<div class="panel-body">
+							Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+						<h3 class="panel-title">Mais de 300 prêmios em design e em conforto.</h3>
+					</div>
+
+					<div id="terceiro-paragrafo" class="collapse">
+						<div class="panel-body">
+							Mais de 5 milhões de clientes satisfeitos em todo o mundo.
+						</div>
+					</div>
+				</div>
 			</div>
+		</div>
 	</section>
 
 	<div class="jumbotron">
@@ -62,7 +88,7 @@
 			</div>
 	</div>
 
-	<section class="container">
+	<section id="nossos-projetos" class="container">
 		<h2>Nossos Projetos</h2>
 
 		<figure class="thumbnail">
@@ -107,7 +133,7 @@
 
 	</section>
 
-	<section>
+	<section id="depoimentos">
 		<div class="container">
 		<h2 class="titulo-depoimentos container">Depoimentos de clientes</h2>
 
@@ -156,7 +182,7 @@
 	</div>	
 		</section>
 
-		<section class="container">
+		<section id="video" class="container">
 			<h2>Vídeo Institucional</h2>
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/k7IPr-rhrPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -164,7 +190,7 @@
 			 </div>
 		</section> 
 
-		<section class="container">
+		<section id="contato" class="container">
 			<h2>Contato</h2>
 			<p>Entre em contato com nosco</p>
 			<div class="form-group">
@@ -211,6 +237,23 @@
 			<button type="submit" class="btn btn-primary">Enviar</button>
 
 		</section>
+
+		<footer>
+
+			<address>
+				<strong> TopCasaFina Arquitetura </strong><br>
+				Rua Vergueiro, 3185, Vila Mariana<br>
+				São Paulo, SP<br>
+				Tel: (11) 5571-2751 ou 5083-3884 
+			</address>
+
+			
+				Email: contata.topcasafina@alura.com.br
+				
+
+		</footer>
+
+
     <script src="jquery.js"></script> 
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
